@@ -1,0 +1,77 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Ovestiaire" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/amaranth_200</item>
+        <item name="colorPrimaryVariant">@color/sangria</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/bitter_sweet</item>
+        <item name="colorSecondaryVariant">@color/bitter_sweet_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.Ovestiaire.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Ovestiaire.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Ovestiaire.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--    MyStyle-->
+
+    <style name="LargeTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="MediumBoldTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="MediumTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="LargeBoldTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+    </style>
+
+    <style name="NormalTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="NormalBoldTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/normal_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="SmallTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="SmallBoldTextTheme" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/small_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
+    </style>
+
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">@dimen/small_text</item>
+    </style>
+
+</resources>

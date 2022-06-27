@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sell.SellFragment">
+
+    <TextView
+        android:id="@+id/txt_your_items_can_have_a_second_life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginTop="@dimen/large"
+        android:layout_marginEnd="@dimen/large"
+        android:textSize="20sp"
+        android:text="@string/your_items_can_have_a_second_life"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/img_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sell1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_your_items_can_have_a_second_life"
+        app:layout_constraintStart_toStartOf="@+id/txt_your_items_can_have_a_second_life"
+        android:layout_marginTop="@dimen/large"/>
+
+    <ImageView
+        android:id="@+id/img_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sell2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_your_items_can_have_a_second_life"
+        app:layout_constraintEnd_toEndOf="@+id/txt_your_items_can_have_a_second_life"
+        android:layout_marginTop="@dimen/large"/>
+
+
+    <ImageView
+        android:id="@+id/img_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sell3"
+        app:layout_constraintStart_toStartOf="@+id/txt_boost_your_budget_by_sharing_your_passion"
+        app:layout_constraintBottom_toTopOf="@+id/txt_boost_your_budget_by_sharing_your_passion"
+        android:layout_marginBottom="@dimen/large"/>
+
+    <ImageView
+        android:id="@+id/img_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/sell4"
+        app:layout_constraintEnd_toEndOf="@+id/txt_boost_your_budget_by_sharing_your_passion"
+        app:layout_constraintBottom_toTopOf="@+id/txt_boost_your_budget_by_sharing_your_passion"
+        android:layout_marginBottom="@dimen/large"/>
+
+
+    <TextView
+        android:id="@+id/txt_boost_your_budget_by_sharing_your_passion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginEnd="@dimen/large"
+        android:layout_marginBottom="@dimen/large"
+        android:textSize="20sp"
+        android:text="@string/boost_your_budget_by_sharing_your_passion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sell"
+        />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginLeft="@dimen/large"
+        android:layout_marginTop="@dimen/large"
+        android:layout_marginEnd="@dimen/large"
+        android:layout_marginRight="@dimen/large"
+        android:layout_marginBottom="@dimen/large"
+        android:text="@string/hint_sell_article"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

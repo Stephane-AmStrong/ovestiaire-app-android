@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_sell_article">
+
+    <fragment
+        android:id="@+id/navigation_sell_article"
+        android:name="com.globodai.ovestiaire.ui.sell.SellFragment"
+        android:label="@string/title_sell_article"
+        tools:layout="@layout/fragment_sell" >
+        <action
+            android:id="@+id/navigate_to_edit_article_fragment"
+            app:destination="@id/editArticleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.globodai.ovestiaire.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_article"
+        android:name="com.globodai.ovestiaire.ui.article.ArticleFragment"
+        android:label="@string/title_article"
+        tools:layout="@layout/fragment_article" />
+
+    <fragment
+        android:id="@+id/navigation_user"
+        android:name="com.globodai.ovestiaire.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/editArticleFragment"
+        android:name="com.globodai.ovestiaire.ui.edit_article.EditArticleFragment"
+        android:label="@string/title_sell_article"
+        tools:layout="@layout/fragment_edit_article" />
+</navigation>

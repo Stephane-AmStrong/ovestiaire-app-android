@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="amaranth_200">#FF5722</color>
+    <color name="amaranth_red">#D62B2B</color>
+    <color name="sangria">#9d0002</color>
+
+    <color name="bitter_sweet">#ff6355</color>
+    <color name="bitter_sweet_700">#c62e2b</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray">#FFEAEAEA</color>
+    <color name="gray_dark">#FFD1D1D2</color>
+
+
+<!--    <color name="amaranth_red">#D62B2B</color>-->
+<!--    <color name="sangria">#9d0001</color>-->
+</resources>

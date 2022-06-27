@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">Ovestiaire</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <!--  Title  -->
+    <string name="title_article">Article</string>
+    <string name="title_bag">Bag</string>
+    <string name="title_community">Communauté</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_user">User</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_sell_article">Vends un article</string>
+    <string name="title_choose_category">Sélectionner une catégorie</string>
+    <string name="title_choose_equipment">Sélectionner un équipement</string>
+    <string name="title_choose_gender">Sélectionner un genre</string>
+    <string name="title_choose_size">Sélectionner une taille</string>
+    <string name="title_choose_sport">Sélectionner un sport</string>
+    <string name="title_choose_brand">Sélectionner une marque</string>
+    <string name="title_choose_colour">Sélectionner une couleur</string>
+    <string name="title_choose_material">Sélectionner un matériel</string>
+    <string name="title_choose_condition">Sélectionner l\'état de l\'article</string>
+
+
+
+
+    <!--  MainDialogActions  -->
+    <string name="action_cancel">Annuler</string>
+    <string name="action_create">Créer</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_register">Enregistrer</string>
+    <string name="action_search">Cherhcer</string>
+    <string name="action_validate_choice">Valider</string>
+
+    <!--  Hints  -->
+    <string name="hint_birthday">Birthday</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_first_name">First Names</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_validate">Valider</string>
+    <string name="hint_pwd">Mot de passe</string>
+    <string name="hint_conf_pwd">Confirmer Votre Mot de passe</string>
+    <string name="hint_add">Ajouter</string>
+    <string name="hint_register">Enregistrer</string>
+    <string name="hint_add_picture">Ajouter des photos</string>
+    <string name="hint_sell_article">Vendre un article</string>
+    <string name="hint_type_your_article_and_add">Tapez un article dans la zone de recherche et ajoutez le.</string>
+    <string name="hint_article_title">Titre  <span style="color:#D62B2B;">*</span> </string>
+    <string name="help_article_title">Ex: Ballon NBA Los Angeles Lakers</string>
+    <string name="hint_article_description">Description</string>
+    <string name="help_article_description">Présentez ici votre article de façon objective et précise : ses défauts, les éventuelles qu\'il peut avoir subi, …</string>
+    <string name="hint_article_gender">Genre *</string>
+    <string name="hint_article_brand">Marque *</string>
+    <string name="hint_article_size">Taille *</string>
+    <string name="hint_article_color">Couleur *</string>
+    <string name="help_article_color">Ex: Rouge</string>
+    <string name="hint_article_material">Matière *</string>
+    <string name="hint_article_condition">Etat *</string>
+    <string name="hint_article_price">Prix *</string>
+    <string name="hint_article_package_size">Format du colis *</string>
+    <string name="warning_exact_original_replicas_incurs_penalties">Un vendeur proposant des articles à la vente qui sont des répliques conformes à des articles originaux encourt les sanctions prévues à l\'article L. 132–2 du code de la consommation.</string>
+    <string name="hint_article_length">Longeur</string>
+    <string name="hint_article_width">Largeur</string>
+    <string name="hint_article_height">Hauteur</string>
+    <string name="suffix_cm">cm</string>
+
+    <string name="forgot_your_password">Vous avez oublié votre mot de passe ?</string>
+    <string name="don_t_have_an_account_register_now">Vous n\'avez pas de compte ? <b>Inscrivez-vous maintenant</b></string>
+    <string name="already_have_an_account_login_now">Vous avez déjà un compte ? <b>Connectez-vous maintenant</b></string>
+
+
+    <!--  SuccessMessages  -->
+    <string name="msg_registration_success">registration was successful</string>
+    <string name="msg_deletion_success">registration was successful</string>
+
+    <!--  ErrorMessages  -->
+    <string name="error_field_required">champ obligatoire</string>
+    <string name="msg_selection_error">please select a %1s before proceeding</string>
+    <string name="msg_registration_error">registration failed</string>
+    <string name="error_prevents_adding">une erreur empêche  l\'ajout de la réservation</string>
+    <string name="error_pwd_not_match">Les mots de passe ne correspondent pas</string>
+    <string name="error_condition_required">Veuillez sélectionner l\'état de l\'article à mettre en vente.</string>
+
+
+    <!--  Patterns  -->
+    <string name="pattern_interval_of_time">%1$s - %2$s</string>
+
+    <!-- Gilles' Strings -->
+    <string name="on_which_sport_your_article_come_from">Dans quelle catégorie sportive souhaitez vous déposer votre article ?</string>
+    <string name="continue_as_guest"><u>Continuer en tant qu’invité</u></string>
+    <string name="already_a_member">Déjà membre ? <b>Connectez-vous</b></string>
+    <string name="i_accept_the_terms_and_conditions">J’accepte les <u>conditions générales</u> et j’ai pris connaissance de la <u>politique de confidentialité</u> et des cookies</string>
+    <string name="your_items_can_have_a_second_life">Tes articles peuvent avoir une seconde vie à toi de jouer, <b>fais vibrer le monde sportif</b></string>
+    <string name="boost_your_budget_by_sharing_your_passion">Boost ton budget et partage ta passion pour le sport <b>à notre communauté</b></string>
+    <string name="check_out_the_guide">Consultez le guide conseil pour votre article <span style="color:#D62B2B;">ici.</span></string>
+    <string name="details"><u>Plus Informations</u></string>
+    <string name="here_you_can_create_searches_with_predefined_criteria_and_activate_them_with_a_click_next_time">Ici vous pouvez créer <span style="color:#D62B2B;">des recherches</span> avec des critères prédéfinis et les activer en un clic la prochaines fois.</string>
+    <string name="quickly_find_what_you_need_to_continue_your_physical_activity">N’attends plus et trouve rapidement ce qu’il te faut pour continuer <span style="color:#D62B2B;">ton activité physique.</span></string>
+    <string name="equipment">Équipements</string>
+    <string name="clothing">Vêtements</string>
+    <string name="shoes">Chaussures</string>
+    <string name="bags">Sacs</string>
+    <string name="accessories">Accessoires</string>
+    <string name="mixed">Mixtes</string>
+    <string name="women">Femme</string>
+    <string name="men">Homme</string>
+    <string name="children">Enfant</string>
+    <string name="articles">Articles</string>
+
+    <string name="lifestyle">Lifestyle</string>
+    <string name="title_activity_auth">AuthActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

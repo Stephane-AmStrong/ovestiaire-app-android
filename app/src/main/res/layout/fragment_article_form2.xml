@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.edit_article.ArticleFormFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_pictures"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_add_picture"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/normal"
+                    android:text="@string/hint_add_picture"
+                    app:icon="@drawable/ic_baseline_add_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/recycler_view_pictures" />
+        -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_title"
+            app:endIconMode="clear_text"
+            app:helperText="@string/help_article_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recycler_view_pictures"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPersonName"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_description_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_description"
+            app:endIconMode="clear_text"
+            app:helperText="@string/help_article_description"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_description_article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text|textPersonName"
+                android:maxLines="3"
+                android:selectAllOnFocus="true"
+                android:singleLine="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_brand"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_description_article"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_article_brand"
+                android:layout_width="match_parent"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:inputType="textAutoComplete"
+                android:selectAllOnFocus="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_gender"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_brand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_article_gender"
+                android:layout_width="match_parent"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:selectAllOnFocus="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_size"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_gender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_article_size"
+                android:layout_width="match_parent"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:inputType="none"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_colour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_color"
+            app:helperText="@string/help_article_color"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_article_colour"
+                android:layout_width="match_parent"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:inputType="textAutoComplete"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_material"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_colour"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_article_material"
+                android:layout_width="match_parent"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:inputType="textAutoComplete"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_condition"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_material"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_article_condition"
+                android:layout_width="match_parent"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:inputType="textAutoComplete"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_price"
+            app:endIconMode="clear_text"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_condition"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="false" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lbl_package_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:hint="@string/hint_article_package_size"
+            app:layout_constraintTop_toBottomOf="@+id/lbl_price"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_package_size"
+                android:layout_width="match_parent"
+                android:paddingStart="17dp"
+                android:paddingEnd="17dp"
+                android:inputType="textAutoComplete"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:text="@string/hint_add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lbl_package_size"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            />
+
+        <TextView
+            android:text="@string/warning_exact_original_replicas_incurs_penalties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
+            android:layout_marginEnd="@dimen/normal"
+            android:layout_marginBottom="@dimen/large"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/btn_register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
